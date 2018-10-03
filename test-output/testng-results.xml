@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17150" started-at="2018-10-03T21:15:44Z" finished-at="2018-10-03T21:16:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17150" started-at="2018-10-03T21:15:44Z" finished-at="2018-10-03T21:16:01Z">
+      <class name="com.automation.tests.FirstTest">
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:com.automation.tests.FirstTest@14acaea5]" name="getDriver" is-config="true" duration-ms="554" started-at="2018-10-03T18:15:43Z" finished-at="2018-10-03T18:15:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.automation.tests.FirstTest@14acaea5]" name="openBrowser" is-config="true" duration-ms="3718" started-at="2018-10-03T18:15:44Z" finished-at="2018-10-03T18:15:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="resgister()[pri:0, instance:com.automation.tests.FirstTest@14acaea5]" name="resgister" duration-ms="12418" started-at="2018-10-03T18:15:47Z" finished-at="2018-10-03T18:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resgister -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.automation.tests.FirstTest@14acaea5]" name="closeBrowser" is-config="true" duration-ms="1013" started-at="2018-10-03T18:16:00Z" finished-at="2018-10-03T18:16:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.automation.tests.FirstTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.automation.tests.FirstTest">
+      <class name="com.automation.tests.services.RestAssuredTest">
         <methods>
-          <include name="getDriver"/>
-          <include name="openBrowser"/>
-          <include name="resgister"/>
-          <include name="closeBrowser"/>
+          <include name="getById"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.automation.tests.FirstTest -->
+      </class> <!-- com.automation.tests.services.RestAssuredTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

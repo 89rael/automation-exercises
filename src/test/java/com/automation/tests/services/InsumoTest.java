@@ -16,14 +16,14 @@ import io.restassured.response.Response;
 
 public class InsumoTest {
 	
-	private Insumo insumo = new  Insumo(10, "notebook", 10);
+	private Insumo insumo = new  Insumo(10, "Cinta", 10);
 	
 	@BeforeMethod
 	public void setUp() {
 		
 		RestAssured.baseURI="http://127.0.0.1";
 		RestAssured.port=3000;
-		RestAssured.basePath="api/product";
+		RestAssured.basePath="api/insumo";
 		
 	}
 	
@@ -34,28 +34,25 @@ public class InsumoTest {
 		response.prettyPrint();
 		assertEquals(response.statusCode(), 200);
 		JsonPath json = response.jsonPath();
-		assertFalse(json.getList("products").isEmpty(), "La lista de productos está vacía");
-		assertEquals(json.getInt("products[1].id"), 2);
-		assertEquals(json.getString("products[1].nombre"), "CPU");
-		assertEquals(json.getInt("products[1].cantidad"), 3);
+		assertFalse(json.getList("insumos").isEmpty(), "La lista de insumos está vacía");
+		assertEquals(json.getInt("insumos[1].id"), 2);
+		assertEquals(json.getString("insumos[1].nombre"), "papel A4");
+		assertEquals(json.getInt("insumos[1].cantidad"), 5);
 	}
 	
 	@Test
 	public void getByIdUsingPathParam() {
 		
 		Response response = RestAssured.given().log().all()
-				.pathParam("productId", "3").get("/{productId}");
+				.pathParam("insumoId", "3").get("/{insumoId}");
 		response.prettyPrint();
 		assertEquals(response.statusCode(), 200);
 		JsonPath json = response.jsonPath();
-		assertNotNull(json.get(), "El recurso no es nulo");
-		assertEquals(json.getInt("id"), 3);
-		assertEquals(json.getString("nombre"), "teclado");
-		assertEquals(json.getInt("cantidad"), 20);
+		assertNotNull(json.get(), "Insumo no encontrado");
 	}
 	
 	@Test
-	public void addProduct() {
+	public void addInsumo() {
 		
 		Response response = RestAssured.given().log().all()
 				.contentType(ContentType.JSON).body(insumo).post();
@@ -63,32 +60,32 @@ public class InsumoTest {
 		assertEquals(response.statusCode(), 201);
 		JsonPath json = response.jsonPath();
 
-		assertEquals(json.getString("message"), "El producto se ha recibido");
+		assertEquals(json.getString("mensaje"), "El insumo se ha agregado");
 	}
 	
 	@Test()
 	public void getByIdUsingQueryParam() {
 		
 		Response response = RestAssured.given().log().all()
-				.queryParam("productId", insumo.getId()).get();
+				.queryParam("id", insumo.getId()).get();
 		response.prettyPrint();
 		assertEquals(response.statusCode(), 200);
 		JsonPath json = response.jsonPath();
 		assertNotNull(json.get(), "El recurso no es nulo");
-		assertEquals(json.getInt("id"), insumo.getId());
+		assertEquals(json.getInt("id"), 10);
 		assertEquals(json.getString("nombre"), insumo.getNombre());
 		assertEquals(json.getInt("cantidad"), insumo.getCantidad());
 		
 	}
 	
 	@Test()
-	public void deleteProduct(){
+	public void deleteInsumo(){
 		Response response = RestAssured.given().log().all()
 				.pathParam("id", insumo.getId())
 				.delete("/{id}");
 		response.prettyPrint();
 		assertEquals(response.statusCode(), 200);
 		JsonPath json = response.jsonPath();
-		assertEquals(json.getString("message"), "El producto ha sido eliminado exitosamente.");
+		assertEquals(json.getString("message"), "El insumo ha sido eliminado exitosamente.");
 	}
 }

@@ -2,51 +2,51 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2772" started-at="2018-10-15T20:10:23Z" finished-at="2018-10-15T20:10:25Z">
+  <suite name="Default suite" duration-ms="2965" started-at="2018-10-16T17:48:15Z" finished-at="2018-10-16T17:48:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2772" started-at="2018-10-15T20:10:23Z" finished-at="2018-10-15T20:10:25Z">
+    <test name="Default test" duration-ms="2965" started-at="2018-10-16T17:48:15Z" finished-at="2018-10-16T17:48:18Z">
       <class name="com.automation.tests.services.InsumoTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="setUp" is-config="true" duration-ms="486" started-at="2018-10-15T17:10:23Z" finished-at="2018-10-15T17:10:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="setUp" is-config="true" duration-ms="460" started-at="2018-10-16T14:48:15Z" finished-at="2018-10-16T14:48:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addProduct()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="addProduct" duration-ms="1953" started-at="2018-10-15T17:10:23Z" finished-at="2018-10-15T17:10:25Z">
+        <test-method status="PASS" signature="addInsumo()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="addInsumo" duration-ms="2162" started-at="2018-10-16T14:48:15Z" finished-at="2018-10-16T14:48:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProduct -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="setUp" is-config="true" duration-ms="0" started-at="2018-10-15T17:10:25Z" finished-at="2018-10-15T17:10:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deleteProduct()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="deleteProduct" duration-ms="64" started-at="2018-10-15T17:10:25Z" finished-at="2018-10-15T17:10:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteProduct -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="setUp" is-config="true" duration-ms="3" started-at="2018-10-15T17:10:25Z" finished-at="2018-10-15T17:10:25Z">
+        </test-method> <!-- addInsumo -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="setUp" is-config="true" duration-ms="0" started-at="2018-10-16T14:48:18Z" finished-at="2018-10-16T14:48:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getAll()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="getAll" duration-ms="100" started-at="2018-10-15T17:10:25Z" finished-at="2018-10-15T17:10:25Z">
+        <test-method status="PASS" signature="deleteInsumo()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="deleteInsumo" duration-ms="63" started-at="2018-10-16T14:48:18Z" finished-at="2018-10-16T14:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInsumo -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="setUp" is-config="true" duration-ms="0" started-at="2018-10-16T14:48:18Z" finished-at="2018-10-16T14:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getAll()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="getAll" duration-ms="103" started-at="2018-10-16T14:48:18Z" finished-at="2018-10-16T14:48:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAll -->
-        <test-method status="PASS" signature="getByIdUsingPathParam()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="getByIdUsingPathParam" duration-ms="56" started-at="2018-10-15T17:10:25Z" finished-at="2018-10-15T17:10:25Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="setUp" is-config="true" duration-ms="0" started-at="2018-10-16T14:48:18Z" finished-at="2018-10-16T14:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getByIdUsingPathParam()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="getByIdUsingPathParam" duration-ms="56" started-at="2018-10-16T14:48:18Z" finished-at="2018-10-16T14:48:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getByIdUsingPathParam -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="setUp" is-config="true" duration-ms="0" started-at="2018-10-15T17:10:25Z" finished-at="2018-10-15T17:10:25Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="setUp" is-config="true" duration-ms="0" started-at="2018-10-16T14:48:18Z" finished-at="2018-10-16T14:48:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getByIdUsingQueryParam()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="getByIdUsingQueryParam" duration-ms="63" started-at="2018-10-15T17:10:25Z" finished-at="2018-10-15T17:10:25Z">
+        <test-method status="PASS" signature="getByIdUsingQueryParam()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="getByIdUsingQueryParam" duration-ms="60" started-at="2018-10-16T14:48:18Z" finished-at="2018-10-16T14:48:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getByIdUsingQueryParam -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.tests.services.InsumoTest@26653222]" name="setUp" is-config="true" duration-ms="0" started-at="2018-10-15T17:10:25Z" finished-at="2018-10-15T17:10:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
       </class> <!-- com.automation.tests.services.InsumoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
